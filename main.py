@@ -5,9 +5,7 @@
 # 4. Update birthdays.csv to contain today's month and day.
 # See the solution video in the 100 Days of Python Course for explainations.
 
-
 from datetime import datetime
-import pandas
 import random
 import smtplib
 import os
@@ -33,7 +31,7 @@ with open('quotes.txt', 'r') as f:
     quotes = f.readlines()
 body = random.choice(quotes)
 
-with smtplib.SMTP("YOUR EMAIL PROVIDER SMTP SERVER ADDRESS") as connection:
+with smtplib.SMTP('smtp.gmail.com') as connection:
     connection.starttls()
     connection.login(SENDER_EMAIL, SENDER_PASSWORD)
     connection.sendmail(
