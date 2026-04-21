@@ -15,8 +15,7 @@ import os
 # import os and use it to get the Github repository secrets
 SENDER_EMAIL = os.environ.get("SENDER_EMAIL")
 SENDER_PASSWORD = os.environ.get("SENDER_PASSWORD")
-# RECEIPIENT_EMAIL = os.environ.get("RECEIPIENT_EMAIL")
-RECEIPIENT_EMAIL = "liuminish@gmail.com"
+RECEIPIENT_EMAIL = os.environ.get("RECEIPIENT_EMAIL")
 DAYS = {
     0: "Monday",
     1: "Tuesday",
