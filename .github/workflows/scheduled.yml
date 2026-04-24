@@ -42,5 +42,5 @@ jobs:
           # Add more secrets in Settings > Secrets > Actions
           SENDER_EMAIL: ${{ secrets.SENDER_EMAIL }}
           SENDER_PASSWORD: ${{ secrets.SENDER_PASSWORD }}
-          RECEIPIENT_EMAIL: ${{secrets.SENDER_EMAIL}}
+          RECEIPIENT_EMAIL: ${{secrets.RECEIPIENT_EMAIL}}
         run: python main.py
